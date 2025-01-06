@@ -1,0 +1,15 @@
+C:\Users\Felipe\Documents\ProjetosDev\Outros\OakPratico\OakTestePratico\bin\Debug\net8.0-windows\OakTestePratico.exe
+C:\Users\Felipe\Documents\ProjetosDev\Outros\OakPratico\OakTestePratico\bin\Debug\net8.0-windows\OakTestePratico.deps.json
+C:\Users\Felipe\Documents\ProjetosDev\Outros\OakPratico\OakTestePratico\bin\Debug\net8.0-windows\OakTestePratico.runtimeconfig.json
+C:\Users\Felipe\Documents\ProjetosDev\Outros\OakPratico\OakTestePratico\bin\Debug\net8.0-windows\OakTestePratico.dll
+C:\Users\Felipe\Documents\ProjetosDev\Outros\OakPratico\OakTestePratico\bin\Debug\net8.0-windows\OakTestePratico.pdb
+C:\Users\Felipe\Documents\ProjetosDev\Outros\OakPratico\OakTestePratico\obj\Debug\net8.0-windows\OakTestePratico.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Felipe\Documents\ProjetosDev\Outros\OakPratico\OakTestePratico\obj\Debug\net8.0-windows\OakTestePratico.AssemblyInfoInputs.cache
+C:\Users\Felipe\Documents\ProjetosDev\Outros\OakPratico\OakTestePratico\obj\Debug\net8.0-windows\OakTestePratico.AssemblyInfo.cs
+C:\Users\Felipe\Documents\ProjetosDev\Outros\OakPratico\OakTestePratico\obj\Debug\net8.0-windows\OakTestePratico.csproj.CoreCompileInputs.cache
+C:\Users\Felipe\Documents\ProjetosDev\Outros\OakPratico\OakTestePratico\obj\Debug\net8.0-windows\OakTestePratico.sourcelink.json
+C:\Users\Felipe\Documents\ProjetosDev\Outros\OakPratico\OakTestePratico\obj\Debug\net8.0-windows\OakTestePratico.dll
+C:\Users\Felipe\Documents\ProjetosDev\Outros\OakPratico\OakTestePratico\obj\Debug\net8.0-windows\refint\OakTestePratico.dll
+C:\Users\Felipe\Documents\ProjetosDev\Outros\OakPratico\OakTestePratico\obj\Debug\net8.0-windows\OakTestePratico.pdb
+C:\Users\Felipe\Documents\ProjetosDev\Outros\OakPratico\OakTestePratico\obj\Debug\net8.0-windows\OakTestePratico.genruntimeconfig.cache
+C:\Users\Felipe\Documents\ProjetosDev\Outros\OakPratico\OakTestePratico\obj\Debug\net8.0-windows\ref\OakTestePratico.dll

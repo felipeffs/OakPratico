@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("OakTestePratico")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+95bca141a43a6f1aba03848ccc31d4e327e9be29")]
 [assembly: System.Reflection.AssemblyProductAttribute("OakTestePratico")]
 [assembly: System.Reflection.AssemblyTitleAttribute("OakTestePratico")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
