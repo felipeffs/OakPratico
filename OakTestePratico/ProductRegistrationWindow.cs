@@ -29,7 +29,7 @@ public partial class ProductRegistrationWindow : Form
 
     private void PriceInput_KeyPress(object sender, KeyPressEventArgs e)
     {
-        if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) && e.KeyChar != '.' && e.KeyChar != ',')
+        if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) && e.KeyChar != ',')
         {
             e.Handled = true;
         }
@@ -41,7 +41,7 @@ public partial class ProductRegistrationWindow : Form
         var text = textBox.Text;
 
         // Caso copie e cole valores que não são números
-        var formatedValue = Regex.Replace(text ?? string.Empty, @"[^\d.,]|\.(?=.*\.)|,(?=.*[,\.])|(?<!\d)[.,]", "");
+        var formatedValue = Regex.Replace(text ?? string.Empty, @"[^\d,]|\.(?=.*\.)|,(?=.*[,\.])|(?<!\d)[.,]|[.]", "");
 
         if (float.TryParse(formatedValue, out var price))
         {
