@@ -95,7 +95,7 @@ public partial class ProductRegistrationWindow : Form
         return;
     }
 
-    private void CancelButton_Click(object sender, EventArgs e)
+    private void CancelRegistrationButton_Click(object sender, EventArgs e)
     {
         _returnAction.Invoke(null);
         return;
