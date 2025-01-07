@@ -19,20 +19,29 @@ public partial class ProductListWindow : Form
         if (_registerWindow != null) return;
 
         Hide();
-        _registerWindow = new ProductRegistrationWindow(ReturnToWindow);
+        _registerWindow = new ProductRegistrationWindow(this);
         _registerWindow.Show();
     }
 
-    private void ReturnToWindow(Item? newItem)
+    public void Return_SaveItem(Item? newItem)
     {
-        if (newItem != null)
-        {
-            _inventoryManager.AddProduct(newItem);
-            ProductListTable.DataSource = _inventoryManager.GetProductsListView();
-        }
+        if (newItem == null) return;
 
-        Show();
+        _inventoryManager.AddProduct(newItem);
+        ProductListTable.DataSource = _inventoryManager.GetProductsListView();
+        Return_Button();
+    }
+
+    public void Return_Button()
+    {
         _registerWindow.Close();
+        _registerWindow = null!;
+        Show();
+    }
+
+    public void Return_Close()
+    {
+        Show();
         _registerWindow = null!;
     }
 }

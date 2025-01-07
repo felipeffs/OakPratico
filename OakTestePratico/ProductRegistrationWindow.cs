@@ -9,12 +9,12 @@ public partial class ProductRegistrationWindow : Form
     private string _productDescription = string.Empty;
     private float _productPrice = 0;
 
-    private Action<Item?> _returnAction;
+    private ProductListWindow _productListWindow;
 
-    public ProductRegistrationWindow(Action<Item?> returnAction)
+    public ProductRegistrationWindow(ProductListWindow productListWindow)
     {
         InitializeComponent();
-        _returnAction = returnAction;
+        _productListWindow = productListWindow;
     }
 
     private void DescriptionLabel_Click(object sender, EventArgs e)
@@ -89,7 +89,7 @@ public partial class ProductRegistrationWindow : Form
         if (_productName != string.Empty && _productPrice != 0)
         {
             var newItem = new Item(_productName, _productDescription, _productPrice, _isAvailableForSale);
-            _returnAction.Invoke(newItem);
+            _productListWindow.Return_SaveItem(newItem);
         }
 
         return;
@@ -97,7 +97,11 @@ public partial class ProductRegistrationWindow : Form
 
     private void CancelRegistrationButton_Click(object sender, EventArgs e)
     {
-        _returnAction.Invoke(null);
-        return;
+        _productListWindow.Return_Button();
+    }
+
+    private void ProductRegistrationWindow_FormClosing(object sender, FormClosingEventArgs e)
+    {
+        _productListWindow.Return_Close();
     }
 }

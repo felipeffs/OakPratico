@@ -33,6 +33,7 @@ partial class ProductListWindow
     {
         RegisterProductButton = new System.Windows.Forms.Button();
         ProductListTable = new System.Windows.Forms.DataGridView();
+        LogoLabel = new System.Windows.Forms.Label();
         ((System.ComponentModel.ISupportInitialize)ProductListTable).BeginInit();
         SuspendLayout();
         // 
@@ -49,7 +50,7 @@ partial class ProductListWindow
         // ProductListTable
         // 
         ProductListTable.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-        ProductListTable.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
+        ProductListTable.BackgroundColor = System.Drawing.SystemColors.ControlLightLight;
         ProductListTable.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
         ProductListTable.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
         ProductListTable.Location = new System.Drawing.Point(21, 66);
@@ -62,6 +63,17 @@ partial class ProductListWindow
         ProductListTable.Size = new System.Drawing.Size(490, 252);
         ProductListTable.TabIndex = 3;
         // 
+        // LogoLabel
+        // 
+        LogoLabel.Font = new System.Drawing.Font("Inter ExtraBold", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)0));
+        LogoLabel.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+        LogoLabel.Location = new System.Drawing.Point(21, 24);
+        LogoLabel.Name = "LogoLabel";
+        LogoLabel.Size = new System.Drawing.Size(105, 27);
+        LogoLabel.TabIndex = 4;
+        LogoLabel.Text = "Kao";
+        LogoLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+        // 
         // ProductListWindow
         // 
         AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -69,6 +81,7 @@ partial class ProductListWindow
         AutoSize = true;
         BackColor = System.Drawing.SystemColors.Control;
         ClientSize = new System.Drawing.Size(528, 386);
+        Controls.Add(LogoLabel);
         Controls.Add(ProductListTable);
         Controls.Add(RegisterProductButton);
         Location = new System.Drawing.Point(15, 15);
@@ -76,7 +89,9 @@ partial class ProductListWindow
         ((System.ComponentModel.ISupportInitialize)ProductListTable).EndInit();
         ResumeLayout(false);
     }
-    
+
+    private System.Windows.Forms.Label LogoLabel;
+
     private System.Windows.Forms.DataGridView ProductListTable;
 
     private System.Windows.Forms.Button RegisterProductButton;

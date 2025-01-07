@@ -154,7 +154,7 @@ partial class ProductRegistrationWindow
         SubmitButton.UseVisualStyleBackColor = true;
         SubmitButton.Click += SubmitButton_Click;
         // 
-        // CancelButton
+        // CancelRegistrationButton
         // 
         CancelRegistrationButton.Location = new System.Drawing.Point(66, 194);
         CancelRegistrationButton.Name = "CancelRegistrationButton";
@@ -179,6 +179,7 @@ partial class ProductRegistrationWindow
         Controls.Add(DescriptionLabel);
         Controls.Add(ProductNameInput);
         Text = "Cadastrar Produto";
+        FormClosing += ProductRegistrationWindow_FormClosing;
         panel1.ResumeLayout(false);
         ResumeLayout(false);
         PerformLayout();
