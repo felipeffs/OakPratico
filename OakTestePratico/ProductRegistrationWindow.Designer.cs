@@ -40,6 +40,7 @@ partial class ProductRegistrationWindow
         panel1 = new System.Windows.Forms.Panel();
         ToggleIsNotAvailable = new System.Windows.Forms.RadioButton();
         SubmitButton = new System.Windows.Forms.Button();
+        CancelButton = new System.Windows.Forms.Button();
         panel1.SuspendLayout();
         SuspendLayout();
         // 
@@ -144,6 +145,7 @@ partial class ProductRegistrationWindow
         // 
         // SubmitButton
         // 
+        SubmitButton.ForeColor = System.Drawing.SystemColors.ControlText;
         SubmitButton.Location = new System.Drawing.Point(457, 193);
         SubmitButton.Name = "SubmitButton";
         SubmitButton.Size = new System.Drawing.Size(75, 23);
@@ -152,11 +154,22 @@ partial class ProductRegistrationWindow
         SubmitButton.UseVisualStyleBackColor = true;
         SubmitButton.Click += SubmitButton_Click;
         // 
+        // CancelButton
+        // 
+        CancelButton.Location = new System.Drawing.Point(66, 194);
+        CancelButton.Name = "CancelButton";
+        CancelButton.Size = new System.Drawing.Size(75, 23);
+        CancelButton.TabIndex = 11;
+        CancelButton.Text = "Cancelar";
+        CancelButton.UseVisualStyleBackColor = true;
+        CancelButton.Click += CancelButton_Click;
+        // 
         // ProductRegistrationWindow
         // 
         AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
         AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
         ClientSize = new System.Drawing.Size(572, 228);
+        Controls.Add(CancelButton);
         Controls.Add(SubmitButton);
         Controls.Add(panel1);
         Controls.Add(PriceInput);
@@ -170,6 +183,8 @@ partial class ProductRegistrationWindow
         ResumeLayout(false);
         PerformLayout();
     }
+
+    private System.Windows.Forms.Button CancelButton;
 
     private System.Windows.Forms.Button SubmitButton;
 

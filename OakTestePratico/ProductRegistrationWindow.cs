@@ -91,6 +91,13 @@ public partial class ProductRegistrationWindow : Form
             var newItem = new Item(_productName, _productDescription, _productPrice, _isAvailableForSale);
             _returnAction.Invoke(newItem);
         }
+
+        return;
+    }
+
+    private void CancelButton_Click(object sender, EventArgs e)
+    {
+        _returnAction.Invoke(null);
         return;
     }
 }
